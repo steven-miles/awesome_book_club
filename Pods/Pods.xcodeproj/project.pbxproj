@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3636F597662074A081AEEC38637E0 /* CosmosSettings.swift */; };
+		0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9B31382A3AF0B9E94CF2F6D693218 /* CosmosLocalizedRating.swift */; };
+		25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5247BCC8F65C1A786C9C224C048EDC1 /* CosmosSize.swift */; };
+		2D0399285A15ED87D933F4D7B0400C2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D4ECA21603232DC102B5E6F8D561D /* CosmosDefaultSettings.swift */; };
+		3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ABB3765650191E4BD244BB7DE5DECB /* Cosmos-dummy.m */; };
+		424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71D3F43D618410BD81731A8A347DA3 /* CosmosText.swift */; };
+		45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95398BBBF4400DF23411A9F447CC5777 /* CosmosView.swift */; };
+		4D99C8043A7A6FBA972D1725D0FBABBC /* Pods-BookClub-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A52CB756F799A7999C3F429054D99681 /* Pods-BookClub-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830ADF0C1BB53A7C09389398AA5F5558 /* CosmosTouch.swift */; };
+		54175D1E409AB85900005829EE29796A /* Pods-BookClubUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E35B05DACDF160EE7F9C235B50CA233F /* Pods-BookClubUITests-dummy.m */; };
+		69DFEAA7A2DE533BFC6759283F0A197F /* Pods-BookClub-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D03E9A8457E87378FD7CA31C88641 /* Pods-BookClub-dummy.m */; };
+		7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244AAE34C2B01D85E8112D23347B3CC /* CosmosAccessibility.swift */; };
+		88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88179D8C99776E246F256BA44D5C0D90 /* StarFillMode.swift */; };
+		984D142B27E297E3F0E9E648AD680293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82295373A8D579D6E3478EC26D0AA00D /* CosmosRating.swift */; };
+		A8D0F1C3405DD1451822DBEDCB4925BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BBCB771F13B0C0E53F6A071BE347C6 /* CosmosLayers.swift */; };
+		B4CEB496E90659ACACF8D5A0552AD6D5 /* Pods-BookClubTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 264BE910A0C8174DF969C9C2D4879ECE /* Pods-BookClubTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F802EB648AD6BE34D5C93AD0133F /* RightToLeft.swift */; };
+		C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF2B1EC8350A480DBBC4D5F2858E99 /* StarLayer.swift */; };
+		D819DD0F06F1890A1088C014537DB15A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 238A7AE1795E0D999E5A36D9DB1ABA8E /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E2BD02925FE38B4E7229B6FA4113C /* CosmosTouchTarget.swift */; };
+		F55317490CE74A82A849AC992C3FCFB2 /* Pods-BookClubTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DA22D584B9BDA36FE84B16CBC83E93 /* Pods-BookClubTests-dummy.m */; };
+		F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9DDDD7CB951DBAFC74C23EAE35E5DD /* CosmosLayerHelper.swift */; };
+		FC23F8237D60045BD54F03B6064B21BA /* Pods-BookClubUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 584A865D99CDEE4607FB615ACADAA41F /* Pods-BookClubUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9A1C27C9F47F61A240162776769500A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDC533A4360A68ABDCE852F04B30927;
+			remoteInfo = Cosmos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04089D28E12805FE68FF59EE1F5E462A /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06824526C53B77FA4F71A85ABA159E6A /* Pods_BookClubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BookClubTests.framework; path = "Pods-BookClubTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F7A8C4CDCAE20ABA18E405755B9ECC5 /* Pods-BookClubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookClubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2026AE66C32976A865C11DFA002C3A9F /* Pods-BookClubTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BookClubTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		238A7AE1795E0D999E5A36D9DB1ABA8E /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		258602FF54920A76D279A1810904D106 /* Pods-BookClubTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookClubTests-frameworks.sh"; sourceTree = "<group>"; };
+		25F10F0309FB50E6F74C52B682FD5D4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264BE910A0C8174DF969C9C2D4879ECE /* Pods-BookClubTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BookClubTests-umbrella.h"; sourceTree = "<group>"; };
+		2C71D3F43D618410BD81731A8A347DA3 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		2DFBCB7287F1F1C57CB9562AE8C90137 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30DA22D584B9BDA36FE84B16CBC83E93 /* Pods-BookClubTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BookClubTests-dummy.m"; sourceTree = "<group>"; };
+		3C6D03E9A8457E87378FD7CA31C88641 /* Pods-BookClub-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BookClub-dummy.m"; sourceTree = "<group>"; };
+		3D14FB03C37B8619511DB3B892503FC3 /* Pods-BookClubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookClubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		403AE986DD041D612C685EA03B9D2C35 /* Pods-BookClub-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BookClub-acknowledgements.plist"; sourceTree = "<group>"; };
+		4EA9B31382A3AF0B9E94CF2F6D693218 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		52B85CD7DEFDB26FD5E7F0CC6426B7B6 /* Pods-BookClubUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BookClubUITests.modulemap"; sourceTree = "<group>"; };
+		584A865D99CDEE4607FB615ACADAA41F /* Pods-BookClubUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BookClubUITests-umbrella.h"; sourceTree = "<group>"; };
+		5CE15CAFA4D1AEEA0BFC490D7A183BED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6056083B462A824EEABCCE3B23E8104C /* Pods-BookClubUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookClubUITests-resources.sh"; sourceTree = "<group>"; };
+		64032AEBB8F5E0B27A0142AB9A6FF723 /* Pods-BookClubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookClubTests.release.xcconfig"; sourceTree = "<group>"; };
+		643CB2F52448C73B465F8C9F59C2237E /* Pods-BookClub.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BookClub.modulemap"; sourceTree = "<group>"; };
+		65B3636F597662074A081AEEC38637E0 /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6AEEF1BFE46C7DFEE291CEB72EBEFDA6 /* Pods-BookClub-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookClub-frameworks.sh"; sourceTree = "<group>"; };
+		76BB7B966FB9C1F4FFDA7F7977B308C3 /* Pods-BookClubTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BookClubTests.modulemap"; sourceTree = "<group>"; };
+		7CCF2EDF19A67622668B97AD87E3287A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801013C022C6F8A1C26193DF7291FB99 /* Pods-BookClub-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookClub-resources.sh"; sourceTree = "<group>"; };
+		82295373A8D579D6E3478EC26D0AA00D /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		830ADF0C1BB53A7C09389398AA5F5558 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		88179D8C99776E246F256BA44D5C0D90 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		89BBCB771F13B0C0E53F6A071BE347C6 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		8DD262E83D63E7206BAAB0910B0E6C7F /* Pods-BookClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookClub.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93ABB3765650191E4BD244BB7DE5DECB /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		93BAC045DF980D0BEAB13BABF12472B8 /* Pods-BookClubUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookClubUITests-frameworks.sh"; sourceTree = "<group>"; };
+		95398BBBF4400DF23411A9F447CC5777 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
+		977D4ECA21603232DC102B5E6F8D561D /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		978E2BD02925FE38B4E7229B6FA4113C /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		9ABF2B1EC8350A480DBBC4D5F2858E99 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		A07A1404C03B05C7C35425B5D3363AE3 /* Pods-BookClubTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookClubTests-resources.sh"; sourceTree = "<group>"; };
+		A1CA9E44D7DFF50824995BEAEE66110B /* Pods_BookClubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BookClubUITests.framework; path = "Pods-BookClubUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52CB756F799A7999C3F429054D99681 /* Pods-BookClub-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BookClub-umbrella.h"; sourceTree = "<group>"; };
+		A55B4CF95B64EF6E9FDD8F8C383A06C0 /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
+		C12ECC0168B3DCD656609C5B3E61CC62 /* Pods-BookClubUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BookClubUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C1D73CA97192A87393FEB52411835704 /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
+		CC8CEE7AA21EDB489D6426645E76116A /* Pods-BookClubTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BookClubTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D70B8A931A0D828D4D472FA59DA32EA0 /* Pods-BookClubUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BookClubUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC1D60A91B7FA94B609C00AE1055D078 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		DEE5C9B00A0BFE7C8BC512EB2BD1300C /* Pods-BookClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookClub.debug.xcconfig"; sourceTree = "<group>"; };
+		E244AAE34C2B01D85E8112D23347B3CC /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
+		E35B05DACDF160EE7F9C235B50CA233F /* Pods-BookClubUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BookClubUITests-dummy.m"; sourceTree = "<group>"; };
+		E5247BCC8F65C1A786C9C224C048EDC1 /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		E79765819C32DD1C7A7CAA3D28F4C321 /* Pods-BookClubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookClubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9A87C2FBCAD9A5D8525696407367329 /* Pods_BookClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BookClub.framework; path = "Pods-BookClub.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9DDDD7CB951DBAFC74C23EAE35E5DD /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		F296F802EB648AD6BE34D5C93AD0133F /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
+		FE57CCBE1CF664B2DFBDDA2ED517EDF4 /* Pods-BookClub-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BookClub-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01754A3F3614E3D4E891DDD02791D7F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0399285A15ED87D933F4D7B0400C2A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01E1D0392629D15E286C35E679679C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984D142B27E297E3F0E9E648AD680293 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D0F1C3405DD1451822DBEDCB4925BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825F16B6AD73AB4E739B02A9FB2EED1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D819DD0F06F1890A1088C014537DB15A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C68C1A5286CF0C80AA695338B197D9B /* Cosmos */ = {
+			isa = PBXGroup;
+			children = (
+				E244AAE34C2B01D85E8112D23347B3CC /* CosmosAccessibility.swift */,
+				977D4ECA21603232DC102B5E6F8D561D /* CosmosDefaultSettings.swift */,
+				EA9DDDD7CB951DBAFC74C23EAE35E5DD /* CosmosLayerHelper.swift */,
+				89BBCB771F13B0C0E53F6A071BE347C6 /* CosmosLayers.swift */,
+				4EA9B31382A3AF0B9E94CF2F6D693218 /* CosmosLocalizedRating.swift */,
+				82295373A8D579D6E3478EC26D0AA00D /* CosmosRating.swift */,
+				65B3636F597662074A081AEEC38637E0 /* CosmosSettings.swift */,
+				E5247BCC8F65C1A786C9C224C048EDC1 /* CosmosSize.swift */,
+				2C71D3F43D618410BD81731A8A347DA3 /* CosmosText.swift */,
+				830ADF0C1BB53A7C09389398AA5F5558 /* CosmosTouch.swift */,
+				978E2BD02925FE38B4E7229B6FA4113C /* CosmosTouchTarget.swift */,
+				95398BBBF4400DF23411A9F447CC5777 /* CosmosView.swift */,
+				F296F802EB648AD6BE34D5C93AD0133F /* RightToLeft.swift */,
+				88179D8C99776E246F256BA44D5C0D90 /* StarFillMode.swift */,
+				9ABF2B1EC8350A480DBBC4D5F2858E99 /* StarLayer.swift */,
+				65CDB5A775ADB78010B62ED1DDDE658B /* Support Files */,
+			);
+			name = Cosmos;
+			path = Cosmos;
+			sourceTree = "<group>";
+		};
+		4C904E6108E37A6EDB477DA1E7AB30DC /* Pods-BookClubTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CE15CAFA4D1AEEA0BFC490D7A183BED /* Info.plist */,
+				76BB7B966FB9C1F4FFDA7F7977B308C3 /* Pods-BookClubTests.modulemap */,
+				2026AE66C32976A865C11DFA002C3A9F /* Pods-BookClubTests-acknowledgements.markdown */,
+				CC8CEE7AA21EDB489D6426645E76116A /* Pods-BookClubTests-acknowledgements.plist */,
+				30DA22D584B9BDA36FE84B16CBC83E93 /* Pods-BookClubTests-dummy.m */,
+				258602FF54920A76D279A1810904D106 /* Pods-BookClubTests-frameworks.sh */,
+				A07A1404C03B05C7C35425B5D3363AE3 /* Pods-BookClubTests-resources.sh */,
+				264BE910A0C8174DF969C9C2D4879ECE /* Pods-BookClubTests-umbrella.h */,
+				0F7A8C4CDCAE20ABA18E405755B9ECC5 /* Pods-BookClubTests.debug.xcconfig */,
+				64032AEBB8F5E0B27A0142AB9A6FF723 /* Pods-BookClubTests.release.xcconfig */,
+			);
+			name = "Pods-BookClubTests";
+			path = "Target Support Files/Pods-BookClubTests";
+			sourceTree = "<group>";
+		};
+		65CDB5A775ADB78010B62ED1DDDE658B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC1D60A91B7FA94B609C00AE1055D078 /* Cosmos.modulemap */,
+				C1D73CA97192A87393FEB52411835704 /* Cosmos.xcconfig */,
+				93ABB3765650191E4BD244BB7DE5DECB /* Cosmos-dummy.m */,
+				A55B4CF95B64EF6E9FDD8F8C383A06C0 /* Cosmos-prefix.pch */,
+				238A7AE1795E0D999E5A36D9DB1ABA8E /* Cosmos-umbrella.h */,
+				7CCF2EDF19A67622668B97AD87E3287A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				90287974CF032B46145E2DE5204B9208 /* Pods */,
+				CE3CC7C873FFC99E1213F7F60B2B6AC5 /* Products */,
+				9BFF98984542DBD64DB38613579A806D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		90287974CF032B46145E2DE5204B9208 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C68C1A5286CF0C80AA695338B197D9B /* Cosmos */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		906D149E03C68192CF32652BD2706953 /* Pods-BookClubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25F10F0309FB50E6F74C52B682FD5D4A /* Info.plist */,
+				52B85CD7DEFDB26FD5E7F0CC6426B7B6 /* Pods-BookClubUITests.modulemap */,
+				D70B8A931A0D828D4D472FA59DA32EA0 /* Pods-BookClubUITests-acknowledgements.markdown */,
+				C12ECC0168B3DCD656609C5B3E61CC62 /* Pods-BookClubUITests-acknowledgements.plist */,
+				E35B05DACDF160EE7F9C235B50CA233F /* Pods-BookClubUITests-dummy.m */,
+				93BAC045DF980D0BEAB13BABF12472B8 /* Pods-BookClubUITests-frameworks.sh */,
+				6056083B462A824EEABCCE3B23E8104C /* Pods-BookClubUITests-resources.sh */,
+				584A865D99CDEE4607FB615ACADAA41F /* Pods-BookClubUITests-umbrella.h */,
+				E79765819C32DD1C7A7CAA3D28F4C321 /* Pods-BookClubUITests.debug.xcconfig */,
+				3D14FB03C37B8619511DB3B892503FC3 /* Pods-BookClubUITests.release.xcconfig */,
+			);
+			name = "Pods-BookClubUITests";
+			path = "Target Support Files/Pods-BookClubUITests";
+			sourceTree = "<group>";
+		};
+		9BFF98984542DBD64DB38613579A806D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3AB3712BBE467A44AA4747D6F87F105 /* Pods-BookClub */,
+				4C904E6108E37A6EDB477DA1E7AB30DC /* Pods-BookClubTests */,
+				906D149E03C68192CF32652BD2706953 /* Pods-BookClubUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3CC7C873FFC99E1213F7F60B2B6AC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04089D28E12805FE68FF59EE1F5E462A /* Cosmos.framework */,
+				E9A87C2FBCAD9A5D8525696407367329 /* Pods_BookClub.framework */,
+				06824526C53B77FA4F71A85ABA159E6A /* Pods_BookClubTests.framework */,
+				A1CA9E44D7DFF50824995BEAEE66110B /* Pods_BookClubUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E3AB3712BBE467A44AA4747D6F87F105 /* Pods-BookClub */ = {
+			isa = PBXGroup;
+			children = (
+				2DFBCB7287F1F1C57CB9562AE8C90137 /* Info.plist */,
+				643CB2F52448C73B465F8C9F59C2237E /* Pods-BookClub.modulemap */,
+				FE57CCBE1CF664B2DFBDDA2ED517EDF4 /* Pods-BookClub-acknowledgements.markdown */,
+				403AE986DD041D612C685EA03B9D2C35 /* Pods-BookClub-acknowledgements.plist */,
+				3C6D03E9A8457E87378FD7CA31C88641 /* Pods-BookClub-dummy.m */,
+				6AEEF1BFE46C7DFEE291CEB72EBEFDA6 /* Pods-BookClub-frameworks.sh */,
+				801013C022C6F8A1C26193DF7291FB99 /* Pods-BookClub-resources.sh */,
+				A52CB756F799A7999C3F429054D99681 /* Pods-BookClub-umbrella.h */,
+				DEE5C9B00A0BFE7C8BC512EB2BD1300C /* Pods-BookClub.debug.xcconfig */,
+				8DD262E83D63E7206BAAB0910B0E6C7F /* Pods-BookClub.release.xcconfig */,
+			);
+			name = "Pods-BookClub";
+			path = "Target Support Files/Pods-BookClub";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		362493804FB48650118E9998B5669608 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CEB496E90659ACACF8D5A0552AD6D5 /* Pods-BookClubTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428961D46B8BF936B569188AB1A623E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC23F8237D60045BD54F03B6064B21BA /* Pods-BookClubUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F72A88918035AFA923560A84B87C61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D37DFC7B928357F5BD770678F80B32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D99C8043A7A6FBA972D1725D0FBABBC /* Pods-BookClub-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CA41A3E689F135BAEECE91B63D9EA0 /* Build configuration list for PBXNativeTarget "Cosmos" */;
+			buildPhases = (
+				64A8AA816E108F31E7CEE1A683E42839 /* Sources */,
+				23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */,
+				B7F72A88918035AFA923560A84B87C61 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cosmos;
+			productName = Cosmos;
+			productReference = 04089D28E12805FE68FF59EE1F5E462A /* Cosmos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		75D53EE396FB6EC7BD6B162078970341 /* Pods-BookClubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9195738175FD9D73EDD3C39DF4DDA3D3 /* Build configuration list for PBXNativeTarget "Pods-BookClubUITests" */;
+			buildPhases = (
+				C52C674FA2588D8712363165CD2993FD /* Sources */,
+				01754A3F3614E3D4E891DDD02791D7F1 /* Frameworks */,
+				428961D46B8BF936B569188AB1A623E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BookClubUITests";
+			productName = "Pods-BookClubUITests";
+			productReference = A1CA9E44D7DFF50824995BEAEE66110B /* Pods_BookClubUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A763374904F5C6D46DB06EE86CAFB1C0 /* Pods-BookClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E052340D3B159093E3BA5FBB0AD98B3 /* Build configuration list for PBXNativeTarget "Pods-BookClub" */;
+			buildPhases = (
+				94A2252E4A61C8292A21AF06197BA5D1 /* Sources */,
+				825F16B6AD73AB4E739B02A9FB2EED1B /* Frameworks */,
+				F6D37DFC7B928357F5BD770678F80B32 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12A0250CBB436F54E215429DE44601C1 /* PBXTargetDependency */,
+			);
+			name = "Pods-BookClub";
+			productName = "Pods-BookClub";
+			productReference = E9A87C2FBCAD9A5D8525696407367329 /* Pods_BookClub.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF713497CB2A897E0BFFCB65CE6CB048 /* Pods-BookClubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D508876C89CAD6130C2C4F3948D4944 /* Build configuration list for PBXNativeTarget "Pods-BookClubTests" */;
+			buildPhases = (
+				F2F026146FBE3DC5E1F3A8002B0374AC /* Sources */,
+				01E1D0392629D15E286C35E679679C41 /* Frameworks */,
+				362493804FB48650118E9998B5669608 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BookClubTests";
+			productName = "Pods-BookClubTests";
+			productReference = 06824526C53B77FA4F71A85ABA159E6A /* Pods_BookClubTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CE3CC7C873FFC99E1213F7F60B2B6AC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */,
+				A763374904F5C6D46DB06EE86CAFB1C0 /* Pods-BookClub */,
+				FF713497CB2A897E0BFFCB65CE6CB048 /* Pods-BookClubTests */,
+				75D53EE396FB6EC7BD6B162078970341 /* Pods-BookClubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64A8AA816E108F31E7CEE1A683E42839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */,
+				7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */,
+				371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */,
+				F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */,
+				AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */,
+				0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */,
+				99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */,
+				015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */,
+				25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */,
+				424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */,
+				4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */,
+				E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */,
+				45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */,
+				C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */,
+				88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */,
+				C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94A2252E4A61C8292A21AF06197BA5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DFEAA7A2DE533BFC6759283F0A197F /* Pods-BookClub-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52C674FA2588D8712363165CD2993FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54175D1E409AB85900005829EE29796A /* Pods-BookClubUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F026146FBE3DC5E1F3A8002B0374AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55317490CE74A82A849AC992C3FCFB2 /* Pods-BookClubTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12A0250CBB436F54E215429DE44601C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */;
+			targetProxy = F9A1C27C9F47F61A240162776769500A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3D3F44B66A238CE49A52F23A785FABEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D73CA97192A87393FEB52411835704 /* Cosmos.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3ED45DBC2E3061E177816156D20FF9C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D14FB03C37B8619511DB3B892503FC3 /* Pods-BookClubUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BookClubUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BookClubUITests/Pods-BookClubUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BookClubUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		432FFE9D2C4E3505668995181343A843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E79765819C32DD1C7A7CAA3D28F4C321 /* Pods-BookClubUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BookClubUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BookClubUITests/Pods-BookClubUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BookClubUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58A0FD6B17C41E06A184C93FFB601035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7A8C4CDCAE20ABA18E405755B9ECC5 /* Pods-BookClubTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BookClubTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BookClubTests/Pods-BookClubTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BookClubTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		659C49EB78C223808F096000090DE9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D73CA97192A87393FEB52411835704 /* Cosmos.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F929EA97CCFAC01C3016C6FCAB48D2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64032AEBB8F5E0B27A0142AB9A6FF723 /* Pods-BookClubTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BookClubTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BookClubTests/Pods-BookClubTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BookClubTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84C0ED72B4EADB2E7A83274B1E828356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE5C9B00A0BFE7C8BC512EB2BD1300C /* Pods-BookClub.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BookClub/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BookClub/Pods-BookClub.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BookClub;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8E649066167CEB3EB9538A8A1B57AFBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD262E83D63E7206BAAB0910B0E6C7F /* Pods-BookClub.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BookClub/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BookClub/Pods-BookClub.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BookClub;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E052340D3B159093E3BA5FBB0AD98B3 /* Build configuration list for PBXNativeTarget "Pods-BookClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C0ED72B4EADB2E7A83274B1E828356 /* Debug */,
+				8E649066167CEB3EB9538A8A1B57AFBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38CA41A3E689F135BAEECE91B63D9EA0 /* Build configuration list for PBXNativeTarget "Cosmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3F44B66A238CE49A52F23A785FABEA /* Debug */,
+				659C49EB78C223808F096000090DE9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D508876C89CAD6130C2C4F3948D4944 /* Build configuration list for PBXNativeTarget "Pods-BookClubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A0FD6B17C41E06A184C93FFB601035 /* Debug */,
+				6F929EA97CCFAC01C3016C6FCAB48D2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9195738175FD9D73EDD3C39DF4DDA3D3 /* Build configuration list for PBXNativeTarget "Pods-BookClubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432FFE9D2C4E3505668995181343A843 /* Debug */,
+				3ED45DBC2E3061E177816156D20FF9C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
